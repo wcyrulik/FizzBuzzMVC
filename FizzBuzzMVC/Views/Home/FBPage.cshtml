@@ -1,9 +1,9 @@
 ﻿@model FizzBuzzMVC.Models.FizzBuzz
 
-<div class="container mt-5">
-    <div class="row row-cols-1 row-cols-lg-2">
-        <div class="col border-end border-5 " ">
-            <h1 class="mb-4">THE FIZZBUZZ: A Coding Project</h1>
+<div class="container col-xxl-8 px-4 py-5 mt-5">
+    <div class="row gy-2 h-100 row-cols-md-2 row-cols-1">
+        <div class="col border-2 border-end">
+            <h1 class="fw-bold lh-1 mb-4">FizzBuzz</h1>
             <h4 class="lead">
                 When it counts you Fizz Buzz  A javascript coding
                 exercise using loops.  Write a program that that prints the
@@ -35,8 +35,9 @@
                                placeholder="Enter Buzz Value"
                                value="@Model.BuzzValue" type="number" />
                     </div>
-                    <button id="btnSubmit" type="submit" class="btn btn-dark mt-2">Submit</button>
+                    <button type="submit" class="btn btn-dark mt-2">Submit</button>
                 </form>
+
                 <h2 class="mt-5 border-bottom border-2">Results</h2>
                 <div class="table-responsive">
                     @* Table goes here *@
@@ -56,6 +57,7 @@
                                     <td>@Model.Result[i + 4]</td>
 
                                 </tr>
+
                             }
                         </table>
                     }
